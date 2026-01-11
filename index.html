@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoArty - Smarter Auto Shopping & Expert Reviews</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#020617', // Slate 950
+                accent: '#f59e0b', // Amber 500
+                racing: '#e11d48', // Rose 600
+                surface: '#f8fafc' // Slate 50
+              }
+            },
+            fontFamily: {
+              // Primary professional sans-serif
+              sans: ['"Inter"', 'system-ui', 'sans-serif'],
+              // Industrial impact font
+              oswald: ['"Oswald"', 'sans-serif'],
+              // Technical data font
+              mono: ['"Roboto Mono"', 'monospace'],
+            },
+            fontSize: {
+              'xs': ['0.75rem', { lineHeight: '1rem', letterSpacing: '0.05em' }],
+              'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+              'base': ['1rem', { lineHeight: '1.625rem' }],
+              'lg': ['1.125rem', { lineHeight: '1.75rem' }],
+              'xl': ['1.25rem', { lineHeight: '1.875rem' }],
+              '2xl': ['1.5rem', { lineHeight: '2rem' }],
+              '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+              '4xl': ['2.25rem', { lineHeight: '2.5rem', letterSpacing: '-0.02em' }],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #fcfcfc;
+            color: #0f172a; /* Slate 900 */
+        }
+        .ad-placeholder {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+        }
+        .btn-amazon {
+            background-color: #f59e0b;
+            color: #020617;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-amazon:hover {
+            background-color: #d97706;
+            transform: translateY(-1px);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #f59e0b; border-radius: 10px; }
+        
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fade-in 0.3s ease-out forwards;
+        }
+        /* Custom scrollbar for technical look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #f59e0b; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+</head>
+<body class="font-sans antialiased">
+    <div id="root"></div>
+</body>
+</html>

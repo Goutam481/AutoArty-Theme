@@ -1,0 +1,8 @@
+{
+  "name": "AutoArty - Premium Automotive Affiliate Theme",
+  "description": "A high-conversion automotive niche application optimized for AdSense and Amazon affiliate marketing, featuring a robust silo structure and AI integration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
