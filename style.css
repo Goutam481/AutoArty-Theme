@@ -1,0 +1,17 @@
+/*
+Theme Name: AutoArty Affiliate
+Theme URI: https://autoarty.com
+Author: AutoArty Engineering
+Author URI: https://autoarty.com
+Description: A premium, high-performance automotive affiliate theme optimized for AdSense and Amazon. Features integrated AI diagnostics and technical intelligence silos.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: autoarty
+Tags: automotive, affiliate, adsense, ai, dark-mode, technical
+*/
+
+/* WordPress Core Alignment */
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; margin-right: 1.5em; }
+.alignright { float: right; margin-left: 1.5em; }

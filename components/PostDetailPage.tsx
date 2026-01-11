@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BlogPost, ExpertProfile } from '../types';
 import { CATEGORY_EXPERTS, TOP_PICKS, BLOG_POSTS } from '../constants';
@@ -14,7 +13,6 @@ interface PostDetailPageProps {
 const PostDetailPage: React.FC<PostDetailPageProps> = ({ post, onNavigate }) => {
   const expert = CATEGORY_EXPERTS[post.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')] || CATEGORY_EXPERTS['car-care'];
   const relatedProducts = TOP_PICKS.filter(p => p.category === post.subcategory).slice(0, 2);
-  const mainPick = relatedProducts[0] || TOP_PICKS[0];
   
   // Get 5 latest posts excluding current one if possible, or just the top 5
   const latestPosts = BLOG_POSTS.filter(p => p.title !== post.title).slice(0, 5);
@@ -185,28 +183,6 @@ const PostDetailPage: React.FC<PostDetailPageProps> = ({ post, onNavigate }) => 
           <aside className="lg:w-1/3 space-y-12">
             <div className="sticky top-[100px] space-y-12">
                
-               {/* STICKY TOP CHOICE - MAX CONVERSION */}
-               <section aria-label="Featured Product" className="bg-brand-accent rounded-[2.5rem] p-8 text-brand-dark shadow-2xl shadow-brand-accent/30 border border-white/20 transform rotate-1">
-                  <div className="flex items-center gap-2 mb-6">
-                    <span className="bg-brand-dark text-white px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-widest">Editor's Lab Choice</span>
-                  </div>
-                  <div className="bg-white rounded-2xl p-6 mb-6 shadow-inner">
-                    <img src={mainPick.image} className="w-full aspect-square object-contain" alt={mainPick.title} />
-                  </div>
-                  <h4 className="text-lg font-black uppercase leading-tight mb-4 line-clamp-2">{mainPick.title}</h4>
-                  <div className="flex items-center justify-between mb-8">
-                    <span className="text-2xl font-black">{mainPick.price}</span>
-                    <div className="flex gap-0.5">
-                      {[1,2,3,4,5].map(i => (
-                        <svg key={i} className="w-3 h-3 fill-brand-dark" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                      ))}
-                    </div>
-                  </div>
-                  <button className="w-full bg-brand-dark text-white py-5 rounded-xl font-black uppercase text-xs tracking-[0.2em] hover:bg-brand-racing transition-colors shadow-xl">
-                    Check Price on Amazon
-                  </button>
-               </section>
-
                {/* LATEST RESEARCH REPORTS */}
                <section aria-label="Latest Research Reports" className="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-2xl overflow-hidden relative">
                   <div className="absolute top-0 left-0 w-full h-1.5 bg-brand-dark"></div>

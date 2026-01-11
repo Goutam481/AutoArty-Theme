@@ -69,6 +69,114 @@ export const USA_CAR_BRANDS: CarBrand[] = [
     website: 'https://www.mbusa.com', partsUrl: 'https://www.mbusa.com/parts', history: 'Karl Benz built the first internal combustion car in 1886.',
     reliabilityScore: 8.3, currentModels: ['C-Class', 'E-Class', 'S-Class', 'GLE', 'GLS', 'G-Wagon', 'EQS', 'EQE', 'SL', 'GT'],
     warrantyInfo: '4yr/50k basic.', partsNote: 'Complex electronics; OEM sensors recommended over aftermarket substitutes.'
+  },
+  {
+    id: 'audi', name: 'Audi', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg', origin: 'Ingolstadt, Germany', founded: '1909', focus: 'Quattro, Tech, Luxury',
+    website: 'https://www.audiusa.com', partsUrl: 'https://parts.audiusa.com', history: 'Formed through the merger of four brands represented by the four rings.',
+    reliabilityScore: 8.1, currentModels: ['A4', 'A6', 'A8', 'Q3', 'Q5', 'Q7', 'Q8', 'e-tron GT', 'RS6'],
+    warrantyInfo: '4yr/50k basic.', partsNote: 'Highly complex AWD systems require precision servicing.'
+  },
+  {
+    id: 'porsche', name: 'Porsche', logo: 'https://upload.wikimedia.org/wikipedia/en/3/37/Porsche_Crest.svg', origin: 'Stuttgart, Germany', founded: '1931', focus: 'Performance, Engineering',
+    website: 'https://www.porsche.com', partsUrl: 'https://shop.porsche.com', history: 'Creator of the legendary 911 rear-engine sports car.',
+    reliabilityScore: 8.9, currentModels: ['911', '718 Cayman', 'Taycan', 'Macan', 'Cayenne', 'Panamera'],
+    warrantyInfo: '4yr/50k basic.', partsNote: 'Precision parts with premium pricing; excellent vintage support through Porsche Classic.'
+  },
+  {
+    id: 'lexus', name: 'Lexus', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Lexus_logo.svg', origin: 'Nagoya, Japan', founded: '1989', focus: 'Reliability, Luxury',
+    website: 'https://www.lexus.com', partsUrl: 'https://parts.lexus.com', history: 'Toyota luxury division that disrupted the German premium market.',
+    reliabilityScore: 9.6, currentModels: ['ES', 'IS', 'LS', 'NX', 'RX', 'GX', 'LX', 'RZ', 'LC'],
+    warrantyInfo: '4yr/50k basic, 6yr/70k powertrain.', partsNote: 'Shares many components with Toyota, leading to high reliability and lower repair costs.'
+  },
+  {
+    id: 'jeep', name: 'Jeep', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Jeep_logo.svg', origin: 'Toledo, OH', founded: '1941', focus: 'Off-Road, SUVs',
+    website: 'https://www.jeep.com', partsUrl: 'https://www.mopar.com', history: 'Born from military necessity during WWII.',
+    reliabilityScore: 7.2, currentModels: ['Wrangler', 'Grand Cherokee', 'Gladiator', 'Compass', 'Wagoneer'],
+    warrantyInfo: '3yr/36k basic.', partsNote: 'Mopar parts are standard; massive third-party aftermarket support for modifications.'
+  },
+  {
+    id: 'subaru', name: 'Subaru', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b3/Subaru_logo.svg', origin: 'Ebisu, Japan', founded: '1953', focus: 'Safety, AWD, Outdoors',
+    website: 'https://www.subaru.com', partsUrl: 'https://parts.subaru.com', history: 'Famous for Symmetrical AWD and Boxer engines.',
+    reliabilityScore: 8.4, currentModels: ['Outback', 'Forester', 'Crosstrek', 'Ascent', 'Impreza', 'WRX', 'Solterra'],
+    warrantyInfo: '3yr/36k basic.', partsNote: 'Boxer engine seals require monitoring; OEM parts recommended for Symmetrical AWD.'
+  },
+  {
+    id: 'hyundai', name: 'Hyundai', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg', origin: 'Seoul, South Korea', founded: '1967', focus: 'Value, Tech, EV',
+    website: 'https://www.hyundaiusa.com', partsUrl: 'https://www.hyundaipartsdeal.com', history: 'Rapidly evolved from budget cars to technology leaders.',
+    reliabilityScore: 8.7, currentModels: ['Elantra', 'Sonata', 'Tucson', 'Santa Fe', 'Palisade', 'Ioniq 5', 'Ioniq 6'],
+    warrantyInfo: '5yr/60k basic, 10yr/100k powertrain.', partsNote: 'Aggressive warranty coverage makes OEM parts highly desirable for owners.'
+  },
+  {
+    id: 'kia', name: 'Kia', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/47/Kia_logo_2021.svg', origin: 'Seoul, South Korea', founded: '1944', focus: 'Design, EV, SUVs',
+    website: 'https://www.kia.com', partsUrl: 'https://www.kiapartsnow.com', history: 'Sister company to Hyundai with a focus on youthful design.',
+    reliabilityScore: 8.6, currentModels: ['Telluride', 'Sorento', 'Sportage', 'EV6', 'EV9', 'K5', 'Soul'],
+    warrantyInfo: '5yr/60k basic, 10yr/100k powertrain.', partsNote: 'Shares many technical architectures with Hyundai models.'
+  },
+  {
+    id: 'nissan', name: 'Nissan', logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Nissan_2020_logo.svg', origin: 'Yokohama, Japan', founded: '1933', focus: 'Tech, EVs, Trucks',
+    website: 'https://www.nissanusa.com', partsUrl: 'https://parts.nissanusa.com', history: 'Pioneered mass-market EVs with the Leaf.',
+    reliabilityScore: 7.9, currentModels: ['Rogue', 'Altima', 'Sentra', 'Pathfinder', 'Frontier', 'Ariya', 'Z', 'GT-R'],
+    warrantyInfo: '3yr/36k basic.', partsNote: 'CVT components require specific fluids and regular inspections.'
+  },
+  {
+    id: 'mazda', name: 'Mazda', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Mazda_logo_%282018%29.svg', origin: 'Hiroshima, Japan', founded: '1920', focus: 'Driving Dynamics, Design',
+    website: 'https://www.mazdausa.com', partsUrl: 'https://parts.mazdausa.com', history: 'Known for Skyactiv tech and the legendary rotary engine.',
+    reliabilityScore: 9.2, currentModels: ['CX-5', 'CX-30', 'CX-50', 'CX-90', 'Mazda3', 'MX-5 Miata'],
+    warrantyInfo: '3yr/36k basic.', partsNote: 'Premium engineering tolerances; stick to Skyactiv-specific fluids.'
+  },
+  {
+    id: 'volvo', name: 'Volvo', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Volvo_logo_2021.svg', origin: 'Gothenburg, Sweden', founded: '1927', focus: 'Safety, Sustainability',
+    website: 'https://www.volvocars.com', partsUrl: 'https://parts.volvocars.com', history: 'Invented the three-point seatbelt and shared the patent for safety.',
+    reliabilityScore: 8.0, currentModels: ['XC40', 'XC60', 'XC90', 'S60', 'V60', 'EX30', 'EX90'],
+    warrantyInfo: '4yr/50k basic.', partsNote: 'Complex safety sensors require OEM calibration after body work.'
+  },
+  {
+    id: 'land-rover', name: 'Land Rover', logo: 'https://upload.wikimedia.org/wikipedia/en/4/4a/Land_Rover_logo.svg', origin: 'Gaydon, UK', founded: '1948', focus: 'Luxury Off-Road',
+    website: 'https://www.landroverusa.com', partsUrl: 'https://parts.landroverusa.com', history: 'The gold standard for luxury all-terrain capability.',
+    reliabilityScore: 6.5, currentModels: ['Range Rover', 'Defender', 'Discovery', 'Velar', 'Evoque'],
+    warrantyInfo: '4yr/50k basic.', partsNote: 'Air suspension systems are high-maintenance technical items.'
+  },
+  {
+    id: 'volkswagen', name: 'Volkswagen', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg', origin: 'Wolfsburg, Germany', founded: '1937', focus: 'Mainstream, Engineering',
+    website: 'https://www.vw.com', partsUrl: 'https://parts.vw.com', history: 'The "People\'s Car" brand, famous for the Beetle and Golf.',
+    reliabilityScore: 7.8, currentModels: ['Golf GTI', 'Jetta', 'Tiguan', 'Atlas', 'ID.4', 'ID.Buzz'],
+    warrantyInfo: '4yr/50k basic.', partsNote: 'Requires specific VW-spec oils; specialized tools often needed for DIY.'
+  },
+  {
+    id: 'cadillac', name: 'Cadillac', logo: 'https://upload.wikimedia.org/wikipedia/en/b/b3/Cadillac_Crest_2014.svg', origin: 'Detroit, MI', founded: '1902', focus: 'American Luxury',
+    website: 'https://www.cadillac.com', partsUrl: 'https://www.gmparts.com/cadillac', history: 'Standard of the World for over a century.',
+    reliabilityScore: 8.0, currentModels: ['Escalade', 'CT4', 'CT5', 'Lyriq', 'XT5', 'Celestiq'],
+    warrantyInfo: '4yr/50k basic, 6yr/70k powertrain.', partsNote: 'Features advanced Magnetic Ride Control systems requiring specific OEM replacement units.'
+  },
+  {
+    id: 'gmc', name: 'GMC', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/GMC_logo.svg', origin: 'Detroit, MI', founded: '1911', focus: 'Premium Trucks & SUVs',
+    website: 'https://www.gmc.com', partsUrl: 'https://www.gmparts.com/gmc', history: 'Professional grade utility and luxury vehicles.',
+    reliabilityScore: 7.9, currentModels: ['Sierra', 'Canyon', 'Yukon', 'Hummer EV', 'Acadia', 'Terrain'],
+    warrantyInfo: '3yr/36k basic.', partsNote: 'Heavy overlap with Chevrolet Silverado/Tahoe parts catalog.'
+  },
+  {
+    id: 'ram', name: 'RAM', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Ram_Trucks_logo.svg', origin: 'Auburn Hills, MI', founded: '2010', focus: 'Heavy Duty Trucks',
+    website: 'https://www.ramtrucks.com', partsUrl: 'https://www.mopar.com', history: 'Spun off from Dodge to focus exclusively on commercial and luxury trucks.',
+    reliabilityScore: 7.4, currentModels: ['RAM 1500', 'RAM 2500', 'RAM 3500', 'ProMaster'],
+    warrantyInfo: '3yr/36k basic, 5yr/100k diesel powertrain.', partsNote: 'Cummins diesel engine parts have distinct maintenance cycles.'
+  },
+  {
+    id: 'rivian', name: 'Rivian', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e8/Rivian_logo_and_wordmark.svg', origin: 'Irvine, CA', founded: '2009', focus: 'Electric Adventure',
+    website: 'https://www.rivian.com', partsUrl: 'https://rivian.com/support', history: 'First to market with a viable electric pickup truck.',
+    reliabilityScore: 7.1, currentModels: ['R1T', 'R1S', 'EDV'],
+    warrantyInfo: '5yr/60k basic, 8yr battery.', partsNote: 'Highly integrated software and hardware; limited independent serviceability.'
+  },
+  {
+    id: 'lucid', name: 'Lucid', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/Lucid_Motors_logo.svg', origin: 'Newark, CA', founded: '2007', focus: 'Ultra-Luxury EV',
+    website: 'https://www.lucidmotors.com', partsUrl: 'https://lucidmotors.com/service', history: 'Pioneered the highest-efficiency EV powertrain technology.',
+    reliabilityScore: 6.9, currentModels: ['Air', 'Gravity'],
+    warrantyInfo: '4yr/50k basic.', partsNote: 'Proprietary high-voltage architectures require certified technicians.'
+  },
+  {
+    id: 'ferrari', name: 'Ferrari', logo: 'https://upload.wikimedia.org/wikipedia/en/3/36/Ferrari_logo.svg', origin: 'Maranello, Italy', founded: '1939', focus: 'Exotic Performance',
+    website: 'https://www.ferrari.com', partsUrl: 'https://parts.ferrari.com', history: 'The most iconic name in racing and high-performance road cars.',
+    reliabilityScore: 7.5, currentModels: ['296 GTB', 'SF90 Stradale', 'Purosangue', 'Roma', '812 Superfast'],
+    warrantyInfo: '3yr/unlimited mileage, 7yr free maintenance.', partsNote: 'Technical servicing is highly ritualized; OEM parts are essential for resale value.'
   }
 ];
 

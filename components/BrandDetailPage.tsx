@@ -1,6 +1,4 @@
-
 import React from 'react';
-import AISuggestionBox from './AISuggestionBox';
 import AdSlot from './AdSlot';
 import { CarBrand } from '../types';
 
@@ -146,13 +144,6 @@ const BrandDetailPage: React.FC<BrandDetailPageProps> = ({ brand }) => {
           <div className="lg:col-span-4 space-y-12">
              <div className="sticky top-32 space-y-12">
                 
-                {/* AI ANALYTICS RESTORED */}
-                <AISuggestionBox 
-                  context={`${brand.name} 2025 technical reliability and maintenance trends`} 
-                  type="blog-ideas" 
-                  className="bg-white text-slate-900 rounded-[2.5rem] shadow-2xl"
-                />
-
                 {/* TECHNICAL TOOLS WIDGET */}
                 <div className="bg-slate-900 border border-white/10 rounded-[2.5rem] p-10 relative overflow-hidden group">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-brand-racing/10 rounded-full blur-3xl -mr-16 -mt-16"></div>

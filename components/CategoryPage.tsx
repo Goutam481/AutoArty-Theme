@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
 import { SiloCategory } from '../types';
-import AISuggestionBox from './AISuggestionBox';
 import SocialShare from './SocialShare';
 import CategoryIcon from './CategoryIcon';
 import SubItemIcon from './SubItemIcon';
@@ -226,13 +224,6 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ category, onSubcategoryClic
           <aside className="lg:w-1/4 space-y-12">
             <div className="sticky top-[150px] space-y-12">
                
-               {/* AI MODULE RESTORED */}
-               <AISuggestionBox 
-                  context={`${category.title} technical analysis and SEO trends`} 
-                  type="blog-ideas" 
-                  className="bg-white text-slate-900 rounded-[2rem] shadow-xl"
-               />
-
                {/* CATEGORY EXPERT PROFILE */}
                {expert && (
                  <section aria-label="Expert Reviewer" className="bg-slate-900 rounded-[2.5rem] p-8 text-white border border-white/10 relative overflow-hidden shadow-2xl group">
