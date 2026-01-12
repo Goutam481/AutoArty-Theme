@@ -11,11 +11,14 @@ Text Domain: autoarty
 Tags: automotive, affiliate, adsense, ai, dark-mode, technical
 */
 
-/* WordPress Core Alignment */
+/* WordPress Core Alignment Classes */
 .aligncenter { display: block; margin: 0 auto; }
 .alignleft { float: left; margin-right: 1.5em; }
 .alignright { float: right; margin-left: 1.5em; }
+.wp-caption { border: 1px solid #f0f0f0; max-width: 100%; padding: 5px 3px 10px; text-align: center; }
+.wp-caption-text { font-size: 0.85em; margin: 0; padding: 0 5px; }
 
+/* Theme Global Behaviors */
 body {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -24,11 +27,22 @@ body {
     color: #0f172a;
 }
 
+/* AdSense Optimization Utilities */
 .ad-placeholder {
     background: #f1f5f9;
     border: 2px dashed #cbd5e1;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
+/* Amazon Button Standard */
 .btn-amazon {
     background-color: #f59e0b;
     color: #020617;
@@ -40,6 +54,7 @@ body {
     transform: translateY(-1px);
 }
 
+/* UI Components */
 .glass-panel {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
